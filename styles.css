@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic+Coding&display=swap');
+
+.barranav {
+    background-color: #1b3039;
+    display: flex;
+    align-items: center; /* Cambiado para centrar verticalmente */
+    padding: 10px; /* Ajustado el padding */
+}
+
+.barranav .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.barranav .logo img {
+    height: 60px; /* Ajusta la altura según tus necesidades */
+    width: auto; /* Para mantener la proporción */
+    transition: all 0.3s;
+}
+
+.barranav .logo img:hover {
+    transform: scale(1.2);
+}
+
+.barranav .navlinks {
+    list-style: none;
+    margin-right: 20px; /* Añadido un margen para separar los elementos */
+}
+
+.barranav .navlinks li {
+    display: inline-block;
+    padding: 0 15px; /* Ajustado el espaciado */
+}
+
+.barranav .navlinks li:hover {
+    transform: scale(1.1);
+}
+
+.barranav .navlinks a {
+    font-weight: 700; /* Quitado el font-size */
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.barranav .navlinks a:hover {
+    color: #ffbc0e;
+}
+
+.barranav .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.barranav .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+
+/* Fondo del cuerpo con un gradiente */
+.inicioc {
+    background: linear-gradient(to right, #1b3039, #f5f5f5); /* Gradiente amarillo a un tono más claro */
+    color: #333; /* Color de texto para mayor legibilidad */
+}
+
+.h1in {
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f5f5f5, #1b3039);
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari, etc.) */
+    background-clip: text;
+    color: transparent; /* Hace que el color del texto sea transparente */
+}
+
+
+.pinicio{
+
+    font-family: "Nanum Gothic Coding", monospace;
+    text-align: center;
+    color: aquamarine;
+}
+
+.boxinicio {
+    position: relative;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    max-width: 800px; /* Establece el ancho máximo del contenedor según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
+
+.boxinicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px); /* Ajusta el valor de desenfoque según tus preferencias */
+    z-index: -1;
+}
