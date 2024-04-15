@@ -30,3 +30,5 @@ function donar() {
         alert("Por favor ingrese un número válido.");
     }
 }
+
+

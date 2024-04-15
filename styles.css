@@ -425,133 +425,98 @@ button[value="igual"] {
     margin-top: 20px; 
   }
 
-
-  @media only screen and (max-width: 600px) {
-    /* Estilos para dispositivos móviles */
-
+/* Estilos para pantallas con un ancho de 414px o menos (como el iPhone 11) */
+@media (max-width: 414px) {
     .barranav {
-        padding: 250px; /* Aumentar el espacio de padding */
-        height: 100px; /* Aumentar la altura de la barra de navegación */
+        /* Aquí puedes ajustar los estilos de la barra de navegación para pantallas pequeñas */
+        flex-direction: column;
         align-items: center;
     }
+    .navlinks {
+        /* Aquí puedes ajustar los estilos de los enlaces de navegación para pantallas pequeñas */
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navlinks li {
+        /* Aquí puedes ajustar los estilos de los elementos de la lista de navegación para pantallas pequeñas */
+        margin: 10px 0;
+    }
+    /* Añade más selectores y estilos según sea necesario */
 
-    .barranav .logo img {
-        height: 50px; /* Reducir el tamaño del logotipo */
+    .about-text {
+        /* Agrega un margen alrededor del texto */
+        margin: 20px;
     }
 
-    .barranav .navlinks {
-        display: none; /* Ocultar enlaces de navegación */
+    .calculadora {
+        /* Aquí puedes ajustar los estilos de la calculadora para pantallas pequeñas */
+        width: 90%; /* Ajusta el ancho de la calculadora al 90% del ancho de la pantalla */
+        margin: 0 auto; /* Centra la calculadora horizontalmente en la pantalla */
     }
-
-    .barranav .donaciones-btn {
-        display: none; /* Ocultar botón de donaciones */
+    .calculadora button {
+        /* Aquí puedes ajustar los estilos de los botones de la calculadora para pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente de los botones */
+        padding: 5px; /* Reduce el relleno de los botones */
+        width: 40%; /* Ajusta el ancho de los botones */
+        height: 40px; /* Ajusta la altura de los botones */
     }
-
-    .container1 .form-container1 {
-        flex-direction: column; /* Cambiar a disposición de columna */
-        align-items: center; /* Centrar elementos */
+    .display {
+        /* Aquí puedes ajustar los estilos del display de la calculadora para pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente del display */
+        padding: 5px; /* Reduce el relleno del display */
+        width: 80%; /* Ajusta el ancho del display al 90% del ancho de la pantalla */
+        height: 40px; /* Ajusta la altura del display */
     }
-
-    .form-container1 input[type="text"] {
-        width: 80%; /* Reducir el ancho del input */
-        margin: 10px 0; /* Agregar espacio entre elementos */
+    .animation-container1 {
+    
+        display: none;
     }
-
-    .form-container1 button {
-        width: 200%; /* Reducir el ancho del botón */
+    .form-container1 {
+        /* Aquí puedes ajustar los estilos del formulario de donaciones para pantallas pequeñas */
+        width: 150%; /* Ajusta el ancho del formulario de donaciones al 90% del ancho de la pantalla */
+        margin: 0 auto; /* Centra el formulario de donaciones horizontalmente en la pantalla */
     }
-
-    .pdonacion {
-        font-size: 14px; /* Reducir el tamaño de fuente */
-    }
-
-    /* Agrega más estilos según sea necesario */
 }
 
 
-@media only screen and (max-width: 828px) {
-    /* Estilos para el iPhone XR y dispositivos similares */
-
+/* Estilos para pantallas con un ancho de 600px o menos */
+@media (max-width: 600px) {
     .barranav {
-        height: 100px; /* Ajustar la altura de la barra de navegación */
-        padding: 15px; /* Ajustar el espacio de padding */
+        flex-direction: column;
+        align-items: center;
     }
-
-    .barranav .logo img {
-        height: 70px; /* Ajustar el tamaño del logotipo */
+    .navlinks {
+        flex-direction: column;
+        padding: 10px;
     }
-
-    .barranav .navlinks {
-        margin-right: 10px; /* Ajustar el margen derecho */
+    .navlinks li {
+        margin: 10px 0;
     }
-
-    .barranav .navlinks li {
-        padding: 0 10px; /* Ajustar el espacio entre enlaces */
+    .about-text {
+        margin: 20px;
     }
-
-    .barranav .donaciones-btn {
-        padding: 8px 20px; /* Ajustar el padding del botón de donaciones */
-        font-size: 14px; /* Ajustar el tamaño de fuente */
+    .calculadora {
+        width: 90%;
+        margin: 0 auto;
     }
-
-    .container1 .form-container1 input[type="text"] {
-        width: 70%; /* Ajustar el ancho del input */
-        margin: 10px 0; /* Ajustar el espacio entre elementos */
+    .calculadora button {
+        font-size: 14px;
+        padding: 5px;
+        width: 40%;
+        height: 40px;
     }
-
-    .form-container1 button {
-        width: 70%; /* Ajustar el ancho del botón */
-        font-size: 16px; /* Ajustar el tamaño de fuente */
+    .display {
+        font-size: 14px;
+        padding: 5px;
+        width: 80%;
+        height: 40px;
     }
-
-    .pdonacion {
-        font-size: 14px; /* Ajustar el tamaño de fuente */
-        margin-top: 10px; /* Ajustar el margen superior */
+    .animation-container1 {
+        display: none;
     }
-
-    /* Agregar más estilos según sea necesario */
+    .form-container1 {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-
-@media only screen and (max-width: 828px) {
-    /* Estilos para el iPhone 11 y dispositivos similares */
-
-    .barranav {
-        height: 100px; /* Ajustar la altura de la barra de navegación */
-        padding: 15px; /* Ajustar el espacio de padding */
-    }
-
-    .barranav .logo img {
-        height: 70px; /* Ajustar el tamaño del logotipo */
-    }
-
-    .barranav .navlinks {
-        margin-right: 10px; /* Ajustar el margen derecho */
-    }
-
-    .barranav .navlinks li {
-        padding: 0 10px; /* Ajustar el espacio entre enlaces */
-    }
-
-    .barranav .donaciones-btn {
-        padding: 8px 20px; /* Ajustar el padding del botón de donaciones */
-        font-size: 14px; /* Ajustar el tamaño de fuente */
-    }
-
-    .container1 .form-container1 input[type="text"] {
-        width: 70%; /* Ajustar el ancho del input */
-        margin: 10px 0; /* Ajustar el espacio entre elementos */
-    }
-
-    .form-container1 button {
-        width: 70%; /* Ajustar el ancho del botón */
-        font-size: 16px; /* Ajustar el tamaño de fuente */
-    }
-
-    .pdonacion {
-        font-size: 14px; /* Ajustar el tamaño de fuente */
-        margin-top: 10px; /* Ajustar el margen superior */
-    }
-
-    /* Agregar más estilos según sea necesario */
-}
