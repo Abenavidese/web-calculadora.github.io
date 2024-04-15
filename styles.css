@@ -424,3 +424,53 @@ button[value="igual"] {
     display: block;
     margin-top: 20px; 
   }
+
+
+  @media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+    .barranav {
+        padding: 5px; /* Reducir el espacio de padding */
+    }
+
+    .barranav .logo img {
+        height: 40px; /* Reducir el tamaño del logotipo */
+    }
+
+    .barranav .navlinks {
+        display: none; /* Ocultar enlaces de navegación */
+    }
+
+    .barranav .donaciones-btn {
+        display: none; /* Ocultar botón de donaciones */
+    }
+
+    .container1 {
+        flex-direction: column; /* Cambiar a disposición de columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .container1 .animation-container1 {
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-bottom: 20px; /* Agregar margen inferior */
+    }
+
+    .container1 .form-container1 {
+        flex-direction: column; /* Cambiar a disposición de columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .form-container1 input[type="text"] {
+        width: 80%; /* Reducir el ancho del input */
+        margin: 10px 0; /* Agregar espacio entre elementos */
+    }
+
+    .form-container1 button {
+        width: 80%; /* Reducir el ancho del botón */
+    }
+
+    .pdonacion {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+
+
+}
