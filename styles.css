@@ -428,12 +428,15 @@ button[value="igual"] {
 
   @media only screen and (max-width: 600px) {
     /* Estilos para dispositivos móviles */
+
     .barranav {
-        padding: 5px; /* Reducir el espacio de padding */
+        padding: 250px; /* Aumentar el espacio de padding */
+        height: 100px; /* Aumentar la altura de la barra de navegación */
+        align-items: center;
     }
 
     .barranav .logo img {
-        height: 40px; /* Reducir el tamaño del logotipo */
+        height: 50px; /* Reducir el tamaño del logotipo */
     }
 
     .barranav .navlinks {
@@ -442,16 +445,6 @@ button[value="igual"] {
 
     .barranav .donaciones-btn {
         display: none; /* Ocultar botón de donaciones */
-    }
-
-    .container1 {
-        flex-direction: column; /* Cambiar a disposición de columna */
-        align-items: center; /* Centrar elementos */
-    }
-
-    .container1 .animation-container1 {
-        margin-right: 0; /* Eliminar margen derecho */
-        margin-bottom: 20px; /* Agregar margen inferior */
     }
 
     .container1 .form-container1 {
@@ -465,12 +458,100 @@ button[value="igual"] {
     }
 
     .form-container1 button {
-        width: 80%; /* Reducir el ancho del botón */
+        width: 200%; /* Reducir el ancho del botón */
     }
 
     .pdonacion {
         font-size: 14px; /* Reducir el tamaño de fuente */
     }
 
+    /* Agrega más estilos según sea necesario */
+}
 
+
+@media only screen and (max-width: 828px) {
+    /* Estilos para el iPhone XR y dispositivos similares */
+
+    .barranav {
+        height: 100px; /* Ajustar la altura de la barra de navegación */
+        padding: 15px; /* Ajustar el espacio de padding */
+    }
+
+    .barranav .logo img {
+        height: 70px; /* Ajustar el tamaño del logotipo */
+    }
+
+    .barranav .navlinks {
+        margin-right: 10px; /* Ajustar el margen derecho */
+    }
+
+    .barranav .navlinks li {
+        padding: 0 10px; /* Ajustar el espacio entre enlaces */
+    }
+
+    .barranav .donaciones-btn {
+        padding: 8px 20px; /* Ajustar el padding del botón de donaciones */
+        font-size: 14px; /* Ajustar el tamaño de fuente */
+    }
+
+    .container1 .form-container1 input[type="text"] {
+        width: 70%; /* Ajustar el ancho del input */
+        margin: 10px 0; /* Ajustar el espacio entre elementos */
+    }
+
+    .form-container1 button {
+        width: 70%; /* Ajustar el ancho del botón */
+        font-size: 16px; /* Ajustar el tamaño de fuente */
+    }
+
+    .pdonacion {
+        font-size: 14px; /* Ajustar el tamaño de fuente */
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    /* Agregar más estilos según sea necesario */
+}
+
+
+@media only screen and (max-width: 828px) {
+    /* Estilos para el iPhone 11 y dispositivos similares */
+
+    .barranav {
+        height: 100px; /* Ajustar la altura de la barra de navegación */
+        padding: 15px; /* Ajustar el espacio de padding */
+    }
+
+    .barranav .logo img {
+        height: 70px; /* Ajustar el tamaño del logotipo */
+    }
+
+    .barranav .navlinks {
+        margin-right: 10px; /* Ajustar el margen derecho */
+    }
+
+    .barranav .navlinks li {
+        padding: 0 10px; /* Ajustar el espacio entre enlaces */
+    }
+
+    .barranav .donaciones-btn {
+        padding: 8px 20px; /* Ajustar el padding del botón de donaciones */
+        font-size: 14px; /* Ajustar el tamaño de fuente */
+    }
+
+    .container1 .form-container1 input[type="text"] {
+        width: 70%; /* Ajustar el ancho del input */
+        margin: 10px 0; /* Ajustar el espacio entre elementos */
+    }
+
+    .form-container1 button {
+        width: 70%; /* Ajustar el ancho del botón */
+        font-size: 16px; /* Ajustar el tamaño de fuente */
+    }
+
+    .pdonacion {
+        font-size: 14px; /* Ajustar el tamaño de fuente */
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    /* Agregar más estilos según sea necesario */
 }
