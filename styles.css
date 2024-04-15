@@ -6,8 +6,8 @@
 .barranav {
     background-color: #1b3039;
     display: flex;
-    align-items: center; /* Cambiado para centrar verticalmente */
-    padding: 10px; /* Ajustado el padding */
+    align-items: center; 
+    padding: 10px; 
 }
 
 .barranav .logo {
@@ -27,12 +27,12 @@
 
 .barranav .navlinks {
     list-style: none;
-    margin-right: 20px; /* Añadido un margen para separar los elementos */
+    margin-right: 20px; 
 }
 
 .barranav .navlinks li {
     display: inline-block;
-    padding: 0 15px; /* Ajustado el espaciado */
+    padding: 0 15px; 
 }
 
 .barranav .navlinks li:hover {
@@ -40,7 +40,7 @@
 }
 
 .barranav .navlinks a {
-    font-weight: 700; /* Quitado el font-size */
+    font-weight: 700; 
     color: #eceff1;
     text-decoration: none;
     
@@ -92,9 +92,9 @@
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid #f5f5dc; /* Agregamos un borde blanco hueso */
-    background-color: transparent; /* Hacemos el fondo transparente */
-    box-shadow: none; /* Eliminamos cualquier sombra si la hubiera */
+    border: 1px solid #f5f5dc; 
+    background-color: transparent; 
+    box-shadow: none; 
 }
 
 .boxinicio {
@@ -103,9 +103,9 @@
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid #f5f5dc; /* Agregamos un borde blanco hueso */
-    background-color: transparent; /* Hacemos el fondo transparente */
-    box-shadow: none; /* Eliminamos cualquier sombra si la hubiera */
+    border: 1px solid #f5f5dc; 
+    background-color: transparent; 
+    box-shadow: none; 
 }
 
 
@@ -122,21 +122,45 @@ text-transform: capitalize;
 margin-bottom: 20px;
 }
 
-.sumah{
-    font-family: "Pacifico", cursive;
+@keyframes cambio-color {
+    0% { color: red; }
+    33% { color: green; }
+    66% { color: blue; }
+    100% { color: red; }
+  }
 
-}
+  /* Define la animación de resaltar */
+  @keyframes resaltar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+
+  .sumah {
+    animation: cambio-color 9s infinite, resaltar 2s infinite;
+    font-family: "Pacifico", cursive;
+  }
 
 .restah{
     font-family: "Pacifico", cursive;
+    animation: cambio-color 9s infinite, resaltar 2s infinite;
 }
 
 .multh{
     font-family: "Pacifico", cursive;
+    animation: cambio-color 9s infinite, resaltar 2s infinite;
 }
 
 .divih{
     font-family: "Pacifico", cursive;
+    animation: cambio-color 9s infinite, resaltar 2s infinite;
+}
+
+.sumaf{
+    font-family: "Pacifico", cursive;
+    animation: cambio-color 9s infinite;
+
 }
 
 .about{
@@ -195,7 +219,7 @@ span{
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -205,10 +229,14 @@ span{
     margin-bottom: 25px;
     letter-spacing: 2px;
     font-family: "Pacifico", cursive;
+    border: 1px solid #f5f5dc; 
+    background-color: transparent; 
+    box-shadow: none; 
 }
 
 .h1container{
     font-family: "Nanum Gothic Coding", monospace;
+    
 }
 
 .quiz {
@@ -242,10 +270,10 @@ span{
 
 
 .imageninicio {
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    max-width: 50%; /* Establece el ancho máximo al 50% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+    display: block; 
+    margin: 0 auto; 
+    max-width: 50%; 
+    height: auto; 
 }
 
 
@@ -261,13 +289,13 @@ text-align: center;
 padding: 20px;
 max-width: 800px;
 margin: 0 auto;
-border: 1px solid #f5f5dc; /* Agregamos un borde blanco hueso */
-background-color: transparent; /* Hacemos el fondo transparente */
-box-shadow: none; /* Eliminamos cualquier sombra si la hubiera */
+border: 1px solid #f5f5dc;
+background-color: transparent; 
+box-shadow: none; 
 }
 
 .animation-container1 {
-    margin-right: 20px; /* Espacio entre la animación y el formulario */
+    margin-right: 20px; 
 }
 
 .form-container1 {
@@ -288,7 +316,7 @@ box-shadow: none; /* Eliminamos cualquier sombra si la hubiera */
 .form-container1 button {
     padding: 10px 20px;
     background-color: #ffbc0e;
-    color: #1b3039; /* Cambia el color del texto del botón */
+    color: #1b3039; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -319,25 +347,36 @@ box-shadow: none; /* Eliminamos cualquier sombra si la hubiera */
 
 .calculadora {
     display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: 160px repeat(5, 75px);
-    background-color:violet;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+    background-color: #f0f0f0;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     
 }
 
 button {
     cursor: pointer;
-    margin: 5px;
-    padding: 0;
-    border-radius: 32px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
     font-size: 1.5em;
-    color: black;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-button:active {
+button:hover {
     background-color: #006f54;
+    color: #fff;
+}
+
+
+button:active {
+    background-color: #004e39;
 }
 
 button:focus {
@@ -354,15 +393,34 @@ button:focus {
 
 .display {
     grid-column: 1 / -1;
-    padding: 16px;
+    padding: 10px;
     display: flex;
-    margin: 15px ;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: right;
-    justify-content: space-between;
-    word-break: break-all;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+
     
 }
+
+button[value="igual"] {
+    background-color: orange;
+    color: white; 
+}
+
+
+
+.pdonacion {
+
+    font-family: "Nanum Gothic Coding", monospace;
+    text-align: center;
+    color: #f5f5dc;
+    letter-spacing: 1px;
+    font-family: "Pacifico";
+    display: block;
+    margin-top: 20px; 
+  }
