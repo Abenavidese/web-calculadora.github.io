@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-  
-    
+    <!-- Enlace al archivo de estilos CSS externo -->
+
 </head>
 <body class="inicioc">
 
-    
+    <!-- Encabezado de la página -->
     <header class="barranav">
         <div class="logo">
+            <!-- Logo de la página -->
             <img src="logo (Custom).png" alt="logo de la pagina">
         </div>
 
+        <!-- Menú de navegación -->
         <nav>
-
             <ul class="navlinks">
+                <!-- Enlaces a otras páginas del sitio -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="operaciones.html">Operaciones básicas</a></li>
                 <li><a href="calculadora.html">Calculadora</a></li>
                 <li><a href="aboutus.html">Sobre nosotros</a></li>
                 <li class="donaciones-btn"><a href="donaciones.html">Donaciones</a></li>
             </ul>
-            
-
         </nav>
-
-   
-
-
     </header>
 
-
-
+    <!-- Contenedor principal de la página de donaciones -->
     <div class="container1">
+        <!-- Contenedor de animación -->
         <div class="animation-container1">
+            <!-- Animación de donaciones -->
             <dotlottie-player src="https://lottie.host/225593ee-4a37-408f-8a37-97cc52749e78/JtVRRS4Yk7.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </div>
+        <!-- Contenedor del formulario de donaciones -->
         <div class="form-container1">
+            <!-- Campo de entrada para el monto de la donación -->
             <input type="text" id="monto" placeholder="Monto de donación">
+            <!-- Símbolo de moneda -->
             <span class="dolar">$</span>
+            <!-- Botón de donar -->
             <button onclick="donar()">Donar</button>
-
-           
-
-           
         </div>
     </div>
 
+    <!-- Mensaje de agradecimiento por la donación -->
     <p class="pdonacion">¡Gracias por considerar apoyar nuestra calculadora web! Tu generosidad nos ayuda a mantener y mejorar esta herramienta para que siga siendo accesible para todos. Con tu ayuda, podemos continuar brindando un servicio útil y gratuito. ¡Cada contribución marca la diferencia y nos impulsa hacia adelante! ¡Gracias por ser parte de nuestro proyecto y por creer en nuestro trabajo!</p>
 
-   
-    
-    
+    <!-- Script para cargar el reproductor de animaciones -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-   
+
+    <!-- Script personalizado para manejar la funcionalidad de donaciones -->
     <script src="scripts.js"></script>
 </body>
 </html>

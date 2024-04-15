@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace al archivo de estilos CSS externo -->
 
     <title>Calculadora</title>
+    <!-- Título de la página -->
 </head>
 <body class="inicioc">
+    <!-- Encabezado de la página -->
     <header class="barranav">
         <div class="logo">
+            <!-- Logo de la página -->
             <img src="logo (Custom).png" alt="logo de la pagina">
         </div>
 
+        <!-- Menú de navegación -->
         <nav>
             <ul class="navlinks">
+                <!-- Enlaces a otras páginas del sitio -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="operaciones.html">Operaciones básicas</a></li>
                 <li><a href="calculadora.html">Calculadora</a></li>
                 <li><a href="aboutus.html">Sobre nosotros</a></li>
                 <li class="donaciones-btn"><a href="donaciones.html">Donaciones</a></li>
             </ul>
-            
-
         </nav>
-
-   
-
-
-
     </header>
 
-
+    <!-- Calculadora -->
     <div class="containe">
         <div class="calculadora">
+            <!-- Pantalla de la calculadora -->
             <div class="display">
                 <div id="valor-anterior"></div>
                 <div id="valor-actual"></div>
             </div>
+            <!-- Botones de la calculadora -->
             <button class="dos" onclick="display.borrarTodo()">C</button>
             <button onclick="display.borrar()">B</button>
             <button class="operador" value="dividir">/</button>
@@ -57,48 +58,51 @@
             <button class="numero">.</button>
             <button class="operador" value="igual">=</button>
         </div>
-    
     </div>
 
+    <!-- Contenedor de ejercicios prácticos -->
     <div class="container">
         <h1 class="h1container" >A LA PRACTICA!</h1>
         <div class="quiz">
+            <!-- Ejercicio 1 -->
             <div class="exercise">
                 <p class="sumaf">Ejercicio 1: </p>
                 <p>2 + 2 + 2 + (3 - 3 + 4) / 8</p>
                 <button class="show-answer">Mostrar Respuesta</button>
                 <div class="answer" style="display:none;">Respuesta: 3</div>
             </div>
+            <!-- Ejercicio 2 -->
             <div class="exercise">
                 <p class="sumaf">Ejercicio 2:</p>
                 <p> 10 - 5 + 3 * 2</p>
                 <button class="show-answer">Mostrar Respuesta</button>
                 <div class="answer" style="display:none;">Respuesta: 11</div>
             </div>
+            <!-- Ejercicio 3 -->
             <div class="exercise">
                 <p class="sumaf">Ejercicio 3:</p>
                 <p>20 / 4 - 2 * 3</p>
                 <button class="show-answer">Mostrar Respuesta</button>
                 <div class="answer" style="display:none;">Respuesta: 2</div>
             </div>
+            <!-- Ejercicio 4 -->
             <div class="exercise">
                 <p class="sumaf">Ejercicio 4:</p>
                 <p> 6 * (5 - 2) + 4 / 2</p>
                 <button class="show-answer">Mostrar Respuesta</button>
                 <div class="answer" style="display:none;">Respuesta: 20</div>
             </div>
+            <!-- Ejercicio 5 -->
             <div class="exercise">
-                <p class="sumaf">Ejercicio 5:
-                </p>
+                <p class="sumaf">Ejercicio 5:</p>
                 <p> 15 + 10 / 2 - (4 + 1)</p>
                 <button class="show-answer">Mostrar Respuesta</button>
                 <div class="answer" style="display:none;">Respuesta: 15</div>
             </div>
         </div>
     </div>
+    <!-- Scripts -->
     <script src="scripts.js"></script>
-
-
     <script src="Operaciones.js" type="text/javascript"></script>
     <script src="java.js" type="text/javascript" defer></script>
     <script src="Display.js" type="text/javascript"></script>
